@@ -1,0 +1,120 @@
+---
+title: "Monta tu RStudio en Amazon"
+subtitle: "en 6 sencillos pasos"
+author: Lluís Ramon
+date: "27 de enero de 2016"
+output: 
+  ioslides_presentation: 
+    logo: Rlogo.png
+    widescreen: yes
+    css: adjust_logo.css
+---
+
+
+## Objetivo
+
+### __Montar un RStudio en Amazon__
+* Mostrar opción fácil y rápida
+* Contacto con Amazon Web Services
+
+## ¿Qué es Amazon Web Services?
+
+* Infraestructura Cloud de Amazon
+* Alquiler de servicios de:
+    * __Computación (EC2)__
+    * Almacenamiento de Datos
+    * Bases de Datos
+    * Redes y comunicaciones
+
+## Instancias de Amazon EC2
+
+* Tipo de servidor virtual para alquilar (CPU, Memoria y Almacenamiento)
+* [Definición de las instancias](https://aws.amazon.com/es/ec2/instance-types/)
+* Por ejemplo: __R3 Optimizadas para memoria__
+
+| Modelo     | vCPU | Memoria (GiB) | Almacenamiento en SSD (GB) |
+|------------|------|---------------|----------------------------|
+| r3.large   | 2    | 15,25         | 1 x 32                     |
+| r3.xlarge  | 4    | 30,5          | 1 x 80                     |
+| r3.2xlarge | 8    | 61            | 1 x 160                    |
+| r3.4xlarge | 16   | 122           | 1 x 320                    |
+| r3.8xlarge | 32   | 244           | 2 x 320                    |
+
+## ¿Cuesta dinero? SI!!!
+
+* [Precio en función de la instancia](https://aws.amazon.com/es/ec2/pricing/)
+* Por ejemplo: __Instancias R3 en EEUU Este__
+
+| Modelo     | vCPU | Memoria (GiB) | Almacenamiento en SSD (GB) | Uso de Linux/UNIX |
+|------------|------|---------------|----------------------------|-------------------|
+| r3.large   | 2    | 15,25         | 1 x 32                     | $0.166 por hora   |
+| r3.xlarge  | 4    | 30,5          | 1 x 80                     | $0.333 por hora   |
+| r3.2xlarge | 8    | 61            | 1 x 160                    | $0.665 por hora   |
+| r3.4xlarge | 16   | 122           | 1 x 320                    | $1.33 por hora    |
+| r3.8xlarge | 32   | 244           | 2 x 320                    | $2.66 por hora    |
+
+
+## Amazon EC2 Spot Instances
+
+* Precios en función de la demanda, tipo la Bolsa
+* Descuentos del 70-90%
+* Indicas cuanto estas dispuesto a pagar
+* [Pricing Spot Instances](https://aws.amazon.com/ec2/spot/pricing/)
+* [Bid Advisor](https://aws.amazon.com/ec2/spot/bid-advisor/)
+
+## Amazon Machine Image (AMI)
+
+* Imagen del sistema operativo y otros programas
+* Hay de diferentes tipos:
+    * Publicas
+    * De Pago
+    * Compartidas
+
+## RStudio AMI
+
+* [RStudio Server Amazon Machine Image](http://www.louisaslett.com/RStudio_AMI/)
+* Por defecto con software útil:
+    * LaTeX y rmarkdown
+    * Git y subvkersion
+    * GDAL
+    * Curl
+    * ODBC dirvers
+    * Integración con Dropbox
+    * etc
+
+## Usaremos RStudio Server
+
+* [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/)
+* Creado y mantenido por Louis Aslett
+* Como el Desktop para Servidores
+* Se accede a la consola con el navegador
+* Cada usuario del servidor tiene usuario del RStudio Server
+
+## Mi primer RStudio en Amazon
+
+* Iniciar sesión en [AWS](https://aws.amazon.com)
+* Usar [RStudio AMI](http://www.louisaslett.com/RStudio_AMI/) de Louis Aslett
+* Cosas a ver:
+    * Importar y exportar datos/código
+    * Abrir un servidor exactamente igual
+    * Crear tu AMI
+    * Crear una alarma
+    * Panel de facturación
+    
+## Cerrar instancias al terminar!!!!
+
+### Si no lo usas...
+
+<img src="giphy.gif" style="width:480px;height:289px;">
+
+## Gracias
+
+¿Dudas? ¿Sugerencias? ¿Insultos?
+
+__Lluís Ramon__
+
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<p><i class="fa fa-twitter fa-lg fa-fw"></i> <a href="https://twitter.com/LluisR_Tgn" target="_blank">@LluisR_Tgn</a></p>
+<p><i class="fa fa-github fa-lg fa-fw"></i> <a href="https://github.com/LluisRamon" target="_blank">@LluisRamon</a></p>
+<p><i class="fa fa-linkedin fa-lg fa-fw"></i> <a href="https://www.linkedin.com/in/lluisramon" target="_blank">lluisramon</a></p>
