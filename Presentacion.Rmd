@@ -73,6 +73,7 @@ output:
 ## RStudio AMI
 
 * [RStudio Server Amazon Machine Image](http://www.louisaslett.com/RStudio_AMI/)
+* Creado y mantenido por Louis Aslett
 * Por defecto con software útil:
     * LaTeX y rmarkdown
     * Git y subvkersion
@@ -85,7 +86,6 @@ output:
 ## Usaremos RStudio Server
 
 * [RStudio Server](https://www.rstudio.com/products/rstudio/download-server/)
-* Creado y mantenido por Louis Aslett
 * Como el Desktop para Servidores
 * Se accede a la consola con el navegador
 * Cada usuario del servidor tiene usuario del RStudio Server
